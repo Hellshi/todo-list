@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Sacramento&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  font-size: 12px;
+
+}
+
+.Planner, h1 {
+  grid-column: 2;
+}
+
+/*----------------------------HOME-------------------------------------*/
+
+.home {
+  background-image: url(./images/dot-background.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 38vw 56vw auto;
+  grid-template-rows: 100px 300px;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+/*----------------------------      NAV BAR HOMEEEE        -------------------------------------*/
+nav {
+  height: 268px;
+  width: 886px;
+  background-image: url(./images/nav-form.svg);
+  background-position: top right;
+  background-position-x: 0px;
+  background-repeat: no-repeat;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+nav ul li {
+  display: inline;
+
+}
+
+nav ul li img {
+  margin-top: 5vh;
+  width: 129px;
+  height: 39px;
+}
+
+/*----------------------------      MAIN HOMEEE         -------------------------------------*/
+main {
+  background-image: url(./images/ornament.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 456px;
+  width: 327px;
+  margin-top: 10%;
+  margin-right: 200px;
+  grid-column: 2;
+  grid-row: 1;
+
+}
+
+/*----------------------------      SOCIAL MEDIA         -------------------------------------*/
+.side-bar {  
+
+  grid-row: 1;
+  grid-column: 3;
+  width: 80px;
+  height: 100vh;
+  background: white;
+  box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.side-bar .social-media, a, img {
+
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  margin-bottom: 33px;
+
+}
+
+.side-bar .social-media {
+
+  padding-top: 30vh;
+
+
+}
+
+/*----------------------------TO DO -------------------------------------*/
+
+.ToDo, .Planner {
+
+  display: grid;
+  grid-template-rows: 95vh 5vh;
+  grid-template-columns: 14vw 81vw 5vw;
+
+}
+
+/*----------------------------   SIDE BAR    -------------------------------------*/
+.side-menu {
+  grid-column: 3;
+  grid-row-start: 1;
+  box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.side-menu, ul {
+  list-style: none;
+}
+
+/*----------------------------   BOTÕES E TRANSIÇÃO    -------------------------------------*/
+.botoes {
+  margin-top: 20vh;
+}
+
+.index-b {
+  display: flex;
+  align-content: center;
+
+}
+
+.index-b:hover {
+  
+  animation: ease-in;
+  transition: 0.3s;
+
+}
+
+/*______________________________________MAIN TODO_________________________________*/
+
+.Body{
+  display: grid;
+  grid-template-rows: 196px 45px 200px ;
+  grid-template-columns: 300px 760px 200px 77px;
+}
+
+.ornamento1 {
+  grid-row: 1;
+  grid-column: 1;
+  margin-top: 15px;
+  margin-left: 20px;
+  background: url('../src/images/flower.svg');
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.ornamento2 {
+  grid-row: 1;
+  grid-column: 3;
+  background: url('../src/images/flower2.svg');
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.nav {
+  grid-column: 4;
+  width: 77px;
+  background: white;
+  height: 100vh;
+  margin-left: 29px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.homeb {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px 30px 30px 30px ;
+  background-image: url('../src/images/buttons/home-b.svg');
+  background-position: center;
+}
+
+.homeb:hover {
+  background-color:#FFC4E4 ;
+}
+
+.tob {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px 30px 30px 30px ;
+  background-image: url('../src/images/buttons/todo-b.svg');
+  background-position: center;
+}
+
+.tob:hover {
+  background-color:#FFC4E4 ;
+}
+
+.planb {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px 30px 30px 30px ;
+  background-image: url('../src/images/buttons/planner-b.svg');
+  background-position: center;
+}
+
+.planb:hover {
+  background-color:#FFC4E4 ;
+}
+
+header {
+  margin-top: 7%;
+  display: flex;
+  justify-content: space-around;
+  grid-row: 1;
+  grid-column: 2;
+  font-family: 'Sacramento', cursive;
+  font-size: 2em;
+}
+
+/*___________________________________ADD TO DO FORM________________________________*/
+
+form {
+
+  grid-row: 2;
+  grid-column: 2;
+}
+
+form input {
+  border: none;
+  background-color: rgba(240, 240, 240, 1);
+  width: 660px;
+  height: 37.52px;
+  border-radius: 25px 25px 25px 25px;
+  font-size: 0.9rem;
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+input::placeholder {
+  color: rgba(107, 107, 107, 1);
+  font-family: 'Open Sans', sans-serif;
+}
+
+textarea:focus, input:focus, select:focus, button {
+  border: 0 none;
+  outline: 0;
+} 
+
+.add-to-do-btn {
+  border: none;
+  background: rgba(251, 202, 213, 1);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 1.5em;
+  color: white;
+  margin-left: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.add-to-do-btn:hover {
+  background: rgba(255, 86, 127, 1);
+  cursor: pointer;
+}
+
+/*______________________________________TODO LIST________________________________*/
+
+.todo-container {
+  grid-row: 3;
+  grid-column: 2;
+  margin-top: 40px;
+  width: 730px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/*_________________________________________TAREFAS_______________________________*/
+
+li {
+  display: flex;
+  text-align: center;
+}
+
+.todo-item {
+  margin-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 400px;
+  display: inline-block;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.completed {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 400px;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  background-color: rgba(240, 240, 240, 1);
+  color: rgba(107, 107, 107, 1);
+  opacity: 0.7;
+}
+
+.complete-btn{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 0px 10px 0 10px;
+  background-color: rgba(166, 255, 175, 1);
+  border: none;
+  padding: 20px;
+  display: inline-block;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.complete-btn:hover {
+  cursor: pointer;
+  background-color:  rgba(32, 234, 52, 1);
+
+}
+
+.trash-btn {
+  padding: 20px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgba(255, 86, 127, 1);
+  border: none;
+  display: inline-block;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.trash-btn:hover {
+  cursor: pointer;
+  background-color: rgba(255, 19, 76, 1);
+}
+
+li img {
+  width: 55px;
+  height: 55px;
+
+}
+
+
+footer {
+  grid-row: 2;
+  grid-column: 2;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+footer span {
+  font-family: 'Sacramento', cursive;
+}
